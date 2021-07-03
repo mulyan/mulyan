@@ -1,6 +1,10 @@
-### Hi there I'm Mulyana 😉
+## Hi there I'm Mulyana
+<p>📐 I'm currently studying at Ahmad Dahlan University, Yogyakarta </p>
 
-- 📐 I'm currently studying at Ahmad Dahlan University, Yogyakarta 
+## ⏳ prolog
+<img src="https://raw.githubusercontent.com/mulyan/mulyan/main/aset/oden.gif">
+<p>Previously I was very interested in web technologies such as javascript, react, nodejs, even game development and kept looking until I bounced off, like the first time Oden met Gol D Roger. therefore I will start over again and share
+</p>
 
-
-[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=mulyan&theme=vue&fire=DD2727)](https://git.io/streak-stats)
+## 📃 To do
+1. Build personal website
