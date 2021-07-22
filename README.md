@@ -9,3 +9,4 @@ Previously I was very interested in web technologies such as javascript, react, 
 1. Build personal website ✅
 2. Learn css 
 3. Create game assets
+4. Join UI/UX design contest
