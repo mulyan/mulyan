@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+:root {
+    --main-bg: #F7F7F7;
+    --neutral : #fff;
+    --neutral-alt: #9D9DA0;
+    --bg-hover: #DFDFE2;
+
+    --head-font: 42px;
+    --body-font: 14px;
+
+    --bold-w: 700;
+    --semi-w: 600;
+    --light-w: 300;
+}
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'inter', sans-serif;
+    /* background: var(--main-bg); */
+}
+.container {
+    padding: 0 80px;
+    height: 100%;
+}
+/* reusable */
+.title__text {
+    font-size: var(--head-font);
+    color: #0C0C22;
+}
+.body__text {
+    font-size: 18px;
+    color: #6A6A77;
+    line-height: 28px;
+}
+/* nav */
+nav {
+    max-width: 100%;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 120px;
+}
+nav ul {
+    max-width: 480px;
+    display: flex;
+    justify-content: space-between;
+}
+ul li {
+    list-style: none;
+}
+ul li:not(:last-child) {
+    margin-right: 40px;
+}
+.link__nav {
+    display: block;
+    text-decoration: none;
+    color: #6A6A77;
+    border-radius: 8px;
+    padding: 12px 16px;
+}
+.active__nav {
+    color: #0C0C22;
+    background: var(--bg-hover);
+    font-weight: var(--bold-w);
+}
+.link__nav:hover {
+    background: var(--bg-hover);
+    color: #0C0C22;
+
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        box-sizing: border-box;
+    }
+    nav ul {
+        width: 90%;
+        justify-content: flex-start;
+    }
+    ul li:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        padding: 0 10px;
+        justify-content: center;
+    }
+}
+/* hero */
+.hero {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.hero__title {
+    margin-bottom: 16px;
+}
+.hero__subtitle {
+    max-width: 500px;
+    text-align: center;
+}
+.link__contact {
+    margin-top: 10px;
+}
+.link__contact a {
+    text-decoration: none;
+    color: #6A6A77;
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.link__contact a:not(:last-child) {
+    margin-right: 2px;
+}
+.twitter:hover {
+    background: #1DA1F2;
+    color: white;
+}
+.dribbble:hover {
+    background: #ea4c89;
+    color: white;
+}
+.github:hover {
+    background: #333;
+    color: white;
+}
+@media only screen and (max-width: 600px) {
+    .hero {
+        width: 90%;
+    }
+    .hero__img {
+        margin-top: 120px;
+    }
+    .hero__title {
+        font-size: 28px;
+    }
+    .hero__subtitle {
+        font-size: 16px;
+        max-width: 300px;
+    }
+}
+

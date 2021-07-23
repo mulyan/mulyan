@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+:root {
+    --main-bg: #F7F7F7;
+    --neutral : #fff;
+    --neutral-alt: #9D9DA0;
+    --bg-hover: #DFDFE2;
+
+    --head-font: 42px;
+    --body-font: 14px;
+
+    --bold-w: 700;
+    --semi-w: 600;
+    --light-w: 300;
+}
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'inter', sans-serif;
+}
+.container {
+    padding: 0 80px;
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+}
+/* nav */
+nav {
+    max-width: 100%;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 120px;
+}
+nav ul {
+    max-width: 480px;
+    display: flex;
+    justify-content: space-between;
+}
+ul li {
+    list-style: none;
+}
+ul li:not(:last-child) {
+    margin-right: 40px;
+}
+.link__nav {
+    display: block;
+    text-decoration: none;
+    color: #6A6A77;
+    border-radius: 8px;
+    padding: 12px 16px;
+}
+.active__nav {
+    color: #0C0C22;
+    background: var(--bg-hover);
+    font-weight: var(--bold-w);
+}
+.link__nav:hover {
+    background: var(--bg-hover);
+    color: #0C0C22;
+
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        box-sizing: border-box;
+    }
+    nav ul {
+        width: 90%;
+        justify-content: flex-start;
+    }
+    ul li:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        padding: 0 10px;
+        justify-content: center;
+    }
+}
+
+/* head */
+.head {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head__img {
+    width: 56px;
+}
+.link {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.head__title {
+    font-size: 24px;
+    color: #0C0C22;
+}
+.head__subtitle {
+    font-size: 14px;
+    font-weight: 200;
+    color: #aaaaad;
+}
+.link_item {
+    text-align: center;
+    text-decoration: none;
+    color: #0C0C22;
+    background: rgba(0, 0, 0, 0.08);
+    font-weight: 600;
+    display: block;
+    line-height: 36px;
+    height: 36px;
+    width: 50%;
+    border-radius: 6px;
+}
+.link_item:not(:last-child) {
+    margin-bottom: 20px;
+}
+@media only screen and (max-width: 768px) {
+    .link_item {
+        width: 100%;
+    }
+}
